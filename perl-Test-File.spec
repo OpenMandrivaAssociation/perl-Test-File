@@ -16,6 +16,7 @@ Buildrequires: perl-devel
 %endif
 Buildrequires:	perl(Test::Builder::Tester)
 BuildArch:	noarch
+BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 This modules provides a collection of test utilities for file
