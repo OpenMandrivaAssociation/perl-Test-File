@@ -1,6 +1,6 @@
 %define module  Test-File
 %define name	perl-%{module}
-%define version 1.22
+%define version 1.23
 %define release %mkrel 1
 
 Name: 		%{name}
@@ -30,8 +30,6 @@ attributes.
 %make
 
 %check
-# owner test doesn't work
-rm -f t/owner.t
 %{__make} test
 
 %install
