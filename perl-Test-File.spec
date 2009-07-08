@@ -1,27 +1,26 @@
-%define module  Test-File
-%define name	perl-%{module}
-%define upstream_version 1.27
-%define version     %perl_convert_version %{upstream_version}
-%define release %mkrel 1
+%define upstream_name    Test-File
+%define upstream_version 1.29
 
-Name: 		%{name}
-Version: 	%{version}
-Release: 	%{release}
+Name: 		perl-%{upstream_name}
+Version: 	%perl_convert_version %{upstream_version}
+Release: 	%mkrel 1
+
 Summary:	Test file attributes
-License:	GPL or Artistic
+License:	GPL+ or Artistic
 Group:		Development/Perl
-URL:		http://search.cpan.org/dist/%{module}
-Source:     http://www.cpan.org/modules/by-module/Test/%{module}-%{upstream_version}.tar.gz
+URL:		http://search.cpan.org/dist/%{upstream_name}
+Source0:    http://www.cpan.org/modules/by-module/Test/%{upstream_name}-%{upstream_version}.tar.gz
+
 Buildrequires:	perl(Test::Builder::Tester)
-BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}
+BuildArch: noarch
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 This modules provides a collection of test utilities for file
 attributes.
 
 %prep
-%setup -q -n %{module}-%{upstream_version} 
+%setup -q -n %{upstream_name}-%{upstream_version} 
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
