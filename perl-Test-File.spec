@@ -1,15 +1,15 @@
 %define upstream_name    Test-File
-%define upstream_version 1.29
+%define upstream_version 1.34
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	2
+Version:	%perl_convert_version 1.34
+Release:	1
 
 Summary:	Test file attributes
 License:	GPL+ or Artistic
 Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Test/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Test/Test-File-1.34.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Test::Builder::Tester)
@@ -113,4 +113,5 @@ make test
 
 * Fri Jul 15 2005 Oden Eriksson <oeriksson@mandriva.com> 1.10-1mdk
 - initial Mandriva package
+
 
