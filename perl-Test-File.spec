@@ -1,5 +1,5 @@
 %define upstream_name    Test-File
-%define upstream_version 1.35
+%define upstream_version 1.36
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
@@ -113,6 +113,7 @@ make test
 
 * Fri Jul 15 2005 Oden Eriksson <oeriksson@mandriva.com> 1.10-1mdk
 - initial Mandriva package
+
 
 
 
