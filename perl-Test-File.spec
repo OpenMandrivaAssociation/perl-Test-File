@@ -8,7 +8,7 @@ Release:	1
 Summary:	Test file attributes
 License:	GPL+ or Artistic
 Group:		Development/Perl
-URL:		http://search.cpan.org/dist/%{upstream_name}
+URL:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/modules/by-module/Test/Test-File-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
