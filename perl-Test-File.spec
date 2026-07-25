@@ -1,15 +1,15 @@
 %define upstream_name    Test-File
-%define upstream_version 1.44
+%define upstream_version 1.995
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
+Version:	%{upstream_version}
 Release:	1
 
 Summary:	Test file attributes
 License:	GPL+ or Artistic
 Group:		Development/Perl
-URL:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Test/Test-File-%{upstream_version}.tar.gz
+URL:		https://github.com/briandfoy/test-file
+Source0:	https://cpan.metacpan.org/authors/id/B/BR/BRIANDFOY/Test-File-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
