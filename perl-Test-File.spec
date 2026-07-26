@@ -1,15 +1,13 @@
 %define upstream_name    Test-File
-%define upstream_version 1.995
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	1.995
+Release:	2
 
 Summary:	Test file attributes
 License:	GPL+ or Artistic
 Group:		Development/Perl
 URL:		https://github.com/briandfoy/test-file
-Source0:	https://cpan.metacpan.org/authors/id/B/BR/BRIANDFOY/Test-File-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/B/BR/BRIANDFOY/Test-File-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -21,7 +19,7 @@ This modules provides a collection of test utilities for file
 attributes.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version} 
+%setup -q -n %{upstream_name}-%{version} 
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
